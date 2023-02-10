@@ -2,8 +2,10 @@ import sys
 import json
 import time
 import matplotlib.pyplot as plt
+import threading
 
 sys.setrecursionlimit(20000)
+threading.stack_size(33554432)
 
 
 def func1(arr, low, high):
